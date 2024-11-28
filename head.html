@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Roboto" content="index, follow" />
+    <meta name="description" content="Naruto is a Japanese manga series written and illustrated by 
+    Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from
+    his peers and dreams of becoming the Hokage, the leader of his village.">
+    <title>my web page</title>
+    <style>
+        html{
+            font-family: "jost", sans-serif;
+            background-color: aliceblue;
+            scroll-behavior: smooth;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        li{
+            list-style: none;
+        }
+        li, p, label{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+            letter-spacing: 0.06;
+            line-height: 1.6;
+            font-size: 1.4rem;
+        }
+        audio{
+            box-shadow: rgb(95, 232, 232, 0.2) 10px 10px 29px;
+            border-radius: 25px;
+        }
+        progress{
+            height: 2rem;
+            width: 20rem;
+        }
+    </style>
+</head>
+<body>
+    <!--our header-->
+    <header>
+        <div class="log">
+            <a href="#" target="_blank">
+                <img src="img1.jpg" alt="sant rampal ji maharaj" style="border-radius: 25px;">
+            </a>
+        </div>
+        <nav>
+            <ul style="list-style-type: none; display:flex; gap:15px;">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-content">
+            <h1>Detail about naruto ujumaki</h1>
+            <p>Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the 
+                story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams 
+                of becoming the Hokage, the leader of his village.</p>
+            <button>See My work</button>
+            <a href="https://www.google.com" target="_blank"><button>web site link</button></a>
+        </div>
+        <!--hero section images-->
+        <div class="hero-image">
+            <figure>
+                <img src="img3.webp" 
+                alt="sant rampal ji maharaj logo image" 
+                height="auto" 
+                width="500" />
+            </figure>
+        </div>
+    </main>
+    <!--about section-->
+    <section id="about">
+        <h2>About the naruto</h2>
+        <div class="about">
+            <p>The story follows a young ninja, Naruto Uzumaki, on his journey to become the Hokage, or head ninja, 
+            of his village. The manga was first released in installments in the Japanese magazine Weekly 
+            Shonen Jump. Publishers later collected the installments and presented them in book form.
+            </p>
+            <p><strong>my coding skill</strong></p>
+            <label for="html">HTML</label>
+            <progress id="html" max="100" value="90"></progress><br>
+            <label for="css">CSS</label>
+            <progress id="css" max="100" value="80"></progress><br>
+            <label for="js">JavaScrpit</label>
+            <progress id="js" max="100" value="60"></progress>
+        </div>
+    </section>
+    <!--our service section-->
+    <section class="service-content">
+        <h2>our service</h2>
+        <div id="service" style="display: flex; gap: 0px;">
+            <figure>
+                <img src="img1.jpg" alt="kakashi" height="200" width="300">
+                <figcaption>kakashi</figcaption>
+            </figure>
+            <figure>
+                <img src="img2.jpg" alt="naruto ujumaki" height="200" width="300">
+                <figcaption>naruto ujumaki</figcaption>
+            </figure>
+            <figure>
+                <img src="img3.webp" alt="naruto" height="200" width="300">  
+                <figcaption>naruto</figcaption>
+            </figure>
+            <figure>
+                <img src="img4.webp" alt="shashke and naruto" width="300" height="200">
+                <figcaption>shashke and naruto</figcaption>
+            </figure>
+        </div>
+    </section>
+    <!--our blog section-->
+    <section class="blog">
+        <article>
+            <h3>ABOUT Story</h3>
+            <p>The story follows a young ninja, <u>Naruto Uzumaki</u>, on his journey to become the <i>Hokage</i>, 
+                or <b>head ninja</b>, of his village. The manga was first released in installments in the 
+                Japanese magazine Weekly Shonen Jump. Publishers later collected the installments 
+                and presented them in book form.</p>
+        </article>
+    </section>
+    <section class="audio">
+        <audio controls>
+            <source src="Naruto Message Tone Download Mp3.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65045743.940980546!2d55.70952643591772!3d5.701994678495655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2sJapan!5e0!3m2!1sen!2sin!4v1732781630831!5m2!1sen!2sin" 
+    width="1200" height="450" style="border:1;" allowfullscreen="" title="Japanese"
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!--form to contact-->
+    <section id="contact">
+        <form action="">
+            <fieldset style="width: 400px">
+                <legend>contact</legend>
+                <label for="name">name</label>
+                <input type="name"><br>
+                <label for="email">Email</label>
+                <input type="email"><br>
+                <label for="feedback">Feedback</label><br>
+                <textarea rows="5" cols="10"></textarea><br>
+                <button>submit</button>
+            </fieldset>
+        </form>
+    </section>
+    <!--footer section-->
+    <footer>
+        <p>&copy;dilip kumbhar</p>
+    </footer>
+</body>
+</html>
