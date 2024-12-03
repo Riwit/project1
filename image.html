@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carausal</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .container{
+            width: 60vw;
+            height: 60vh;
+            border-radius: 1rem;
+            box-shadow: 0px 7px 29px 0px red;
+            background-image: url('img1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: gallery 20s linear infinite;
+        }
+        @keyframes gallery{
+            0%{
+                background-image: url('img2.jpg');
+                
+            }
+            25%{
+                background-image: url('img3.jpg');
+                
+            }
+            50%{
+                background-image: url('naruto4.jpg');
+                
+            }
+            75%{
+                background-image: url('naruto1.jpg');
+                
+            }
+            100%{
+                background-image: url('naruto2.jpg');
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+</body>
+</html>
